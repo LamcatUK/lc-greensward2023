@@ -120,6 +120,15 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
         acf_register_block_type(array(
+            'name'				=> 'lc_wide_cta',
+            'title'				=> __('LC Wide CTA'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/lc_wide_cta.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
             'name'				=> 'lc_full_width_text',
             'title'				=> __('LC Full Width Text'),
             'category'			=> 'layout',

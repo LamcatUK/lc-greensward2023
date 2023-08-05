@@ -1,0 +1,22 @@
+.wide_cta {
+    &__card {
+        border-radius: var(--border-2);
+        padding: 1rem;
+        display: flex;
+        @media (min-width:992px) {
+            justify-content: flex-end;
+        }
+    }
+    &__content {
+        width: min(80%, 90vw);
+        margin-inline: auto;
+        @media (min-width:992px) {
+            margin-inline: unset;
+        }
+        p > a {
+            color: white;
+            text-decoration: underline;
+        }
+    }
+
+}

@@ -10,6 +10,7 @@
     background: linear-gradient(45deg, var(--col-primary-400) 50%, var(--col-secondary-400) 100%);
     color: white;
     position: relative;
+    isolation: isolate;
     &::before {
         position: absolute;
         content: "";
@@ -23,5 +24,6 @@
         background-size: contain;
         background-position: bottom left;
         background-repeat: no-repeat;
+        z-index: -1;
     }
 }
