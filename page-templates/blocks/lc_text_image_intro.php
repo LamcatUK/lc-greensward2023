@@ -30,7 +30,7 @@ if (get_field('order') == 'image-text') {
     $orderImage = 'order-1 order-lg-1';
 }
 
-$classes = $block['className'];
+$classes = $block['className'] ?? null;
 
 ?>
 <section

@@ -115,11 +115,11 @@
         },
         {
             "key": "field_64971d15e258e",
-            "label": "Breakout",
+            "label": "Padding",
             "name": "breakout",
             "aria-label": "",
             "type": "checkbox",
-            "instructions": "Breakout of the container",
+            "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
@@ -285,5 +285,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687625039
+    "modified": 1691240835
 }

@@ -10,14 +10,14 @@ switch ($colour) {
         break;
 }
 
-$breakout = 'py-5';
+$breakout = '';
 // if (get_field('breakout')[0] ?? null && get_field('breakout')[0] == 'Yes') {
 //     $breakout = $background;
 //     $background = '';
 // }
 
 if (get_field('breakout')[0] ?? null && get_field('breakout')[0] == 'Yes') {
-    $breakout = '';
+    $breakout = 'py-5';
 }
 
 $splitText = 'col-lg-8';

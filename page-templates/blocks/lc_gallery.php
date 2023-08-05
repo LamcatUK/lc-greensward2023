@@ -1,4 +1,4 @@
-<section class="gallery pt-4 pb-5">
+<section class="gallery pt-4">
     <div class="container-xl">
         <div class="gallery-grid" id="gallery">
             <?php
