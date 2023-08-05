@@ -16,8 +16,11 @@ if (get_field('breakout')[0] ?? null && get_field('breakout')[0] == 'Yes') {
     $background = '';
 }
 
+$classes = $block['className'];
+
 ?>
-<section class="full_width_text <?=$breakout?>">
+<section
+    class="full_width_text <?=$breakout?> <?=$classes?>">
     <div class="container-xl <?=$background?> py-5">
         <h2 class="d-none d-lg-block">
             <?=get_field('title')?>
