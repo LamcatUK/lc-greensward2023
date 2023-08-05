@@ -23236,6 +23236,10 @@ main {
   padding: 0.55rem 0.75rem !important;
 }
 
+.wpcf7 {
+  max-width: 100% !important;
+}
+
 /*
 var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
 for (; i < all.length; i++) {

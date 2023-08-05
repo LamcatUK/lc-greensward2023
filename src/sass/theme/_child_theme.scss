@@ -72,8 +72,8 @@ main {
     padding-inline: 0;
 }
 
-#breadcrumbs {
-}
+// #breadcrumbs {
+// }
 
 
 .reading {
@@ -83,6 +83,10 @@ main {
 
 .form-control {
     padding: 0.55rem 0.75rem !important;
+}
+
+.wpcf7 {
+    max-width: 100% !important;
 }
 
 // show stuff that overflows horizontally
