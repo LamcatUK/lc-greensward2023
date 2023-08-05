@@ -89,6 +89,25 @@ main {
     max-width: 100% !important;
 }
 
+.wpcf7-checkbox {
+    display: grid;
+    gap: 0.25rem;
+    @media (min-width:576px) {
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 1rem;
+    }
+    input {
+        @extend .form-check-input;
+    }
+    .wpcf7-list-item-label {
+        @extend .form-check-label;
+        padding-left: 0.25rem;
+    }
+    .wpcf7-list-item {
+        margin-left: 0;
+    }
+}
+
 // show stuff that overflows horizontally
 // * {
 //     outline: 1px solid #f00 !important;
