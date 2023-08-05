@@ -33,6 +33,19 @@ foreach ($services as $s) {
             </a>
             <?php
 }
+if (count($services) % 3 != 0) {
+    ?>
+            <a href="/book-survey/" class="service_cards__card">
+                <div class="service_cards__detail">
+                    <img src="<?=get_stylesheet_directory_uri() . '/img/icons/icon__survey--wo.svg'?>"
+                        alt="">
+                    <div class="service_cards__test">
+                        <h3>Book a Site Survey</h3>
+                    </div>
+                </div>
+            </a>
+            <?php
+}
 ?>
         </div>
     </div>
