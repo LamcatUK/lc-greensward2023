@@ -34,8 +34,12 @@ foreach ($services as $s) {
             <?php
 }
 if (count($services) % 3 != 0) {
+    $survey_page = get_page_by_path('book-survey');
+    $bg = wp_get_attachment_image_url(get_hero($survey_page->ID), 'large');
     ?>
             <a href="/book-survey/" class="service_cards__card">
+                <img src="<?=$bg?>" alt=""
+                    class="service_cards__background">
                 <div class="service_cards__detail">
                     <img src="<?=get_stylesheet_directory_uri() . '/img/icons/icon__survey--wo.svg'?>"
                         alt="">
