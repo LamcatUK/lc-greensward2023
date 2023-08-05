@@ -5,7 +5,7 @@ $classes = $block['className'] ?? null;
     <div class="container-xl">
         <div class="row">
             <div class="col-lg-6">
-                <div class="h3">Find Us</div>
+                <h2>Find Us</h2>
                 <ul class="fa-ul no-indent">
                     <li class="mb-4"><span class="fa-li"><i class="far fa-envelope"></i></span>
                         <?=do_shortcode('[contact_email]')?>
