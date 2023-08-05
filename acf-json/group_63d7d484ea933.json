@@ -114,6 +114,31 @@
             "save_other_choice": 0
         },
         {
+            "key": "field_64ce2bfdbfb16",
+            "label": "Padding",
+            "name": "padding",
+            "aria-label": "",
+            "type": "checkbox",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "25",
+                "class": "",
+                "id": ""
+            },
+            "choices": {
+                "Yes": "Yes"
+            },
+            "default_value": [],
+            "return_format": "value",
+            "allow_custom": 0,
+            "layout": "vertical",
+            "toggle": 0,
+            "save_custom": 0,
+            "custom_choice_button_text": "Add new choice"
+        },
+        {
             "key": "field_63d7d4cd15fb2",
             "label": "Text Column",
             "name": "",
@@ -263,5 +288,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687635559
+    "modified": 1691233314
 }
