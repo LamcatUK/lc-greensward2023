@@ -1,7 +1,7 @@
 <?php
 $classes = $block['className'] ?? null;
 ?>
-<section class="contact_details py- <?=$classes?>">
+<section class="contact_details py-5 <?=$classes?>">
     <div class="container-xl">
         <div class="row">
             <div class="col-lg-6">
