@@ -10,10 +10,14 @@ switch ($colour) {
         break;
 }
 
-$breakout = '';
+$breakout = 'py-5';
+// if (get_field('breakout')[0] ?? null && get_field('breakout')[0] == 'Yes') {
+//     $breakout = $background;
+//     $background = '';
+// }
+
 if (get_field('breakout')[0] ?? null && get_field('breakout')[0] == 'Yes') {
-    $breakout = $background;
-    $background = '';
+    $breakout = '';
 }
 
 $splitText = 'col-lg-8';
@@ -27,8 +31,9 @@ if (get_field('order') == 'image-text') {
     $orderImage = 'order-2 order-lg-1';
 }
 ?>
-<section class="text_cta <?=$breakout?>">
-    <div class="container-xl <?=$background?> py-5">
+<section class="text_cta">
+    <div
+        class="container-xl <?=$background?> <?=$breakout?>">
         <div class="d-lg-none">
             <h2><?=get_field('title')?></h2>
         </div>
