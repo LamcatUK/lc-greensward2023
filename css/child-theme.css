@@ -23121,6 +23121,28 @@ footer #footer-content {
   text-wrap: balance;
 }
 
+.gallery-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(16.5rem, 1fr));
+}
+.gallery-grid .grid-item {
+  overflow: hidden;
+  border-radius: var(--border-1);
+  width: 100%;
+  aspect-ratio: 3/2;
+}
+.gallery-grid .grid-item img {
+  width: 100%;
+  aspect-ratio: 3/2;
+  -o-object-fit: cover;
+  object-fit: cover;
+  transition: transform var(--transition);
+}
+.gallery-grid .grid-item:hover img {
+  transform: scale(1.1);
+}
+
 a,
 a.noline {
   text-decoration: none;
