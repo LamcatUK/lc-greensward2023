@@ -1,4 +1,7 @@
-<section class="contact_details py-4">
+<?php
+$classes = $block['className'] ?? null;
+?>
+<section class="contact_details py- <?=$classes?>">
     <div class="container-xl">
         <div class="row">
             <div class="col-lg-6">
@@ -18,7 +21,7 @@
                     </li>
                     <?php
                     }
-                        ?>
+?>
                     <li class="mb-4"><span class="fa-li"><i class="fas fa-map-marker-alt"></i></span>
                         <?=get_field('contact_address', 'options')?>
                     </li>
