@@ -14,7 +14,7 @@ $breakout = $background;
 
 $padding = '';
 if (get_field('padding')[0] ?? null && get_field('padding')[0] == 'Yes') {
-    $padding = 'py-5';
+    $padding = 'pb-5';
 }
 
 $splitText = 'col-lg-6';
