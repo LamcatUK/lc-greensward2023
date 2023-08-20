@@ -23147,6 +23147,7 @@ footer #footer-content {
   width: 100%;
   max-width: 400px;
   margin: 0 auto 1rem auto;
+  border-radius: var(--border-1);
 }
 .team__name {
   font-weight: 600;
