@@ -22456,9 +22456,10 @@ sup {
 footer {
   background-color: var(--col-brown-400);
   color: var(--col-grey);
+  font-size: var(--fs-200);
 }
 footer img {
-  max-width: 200px;
+  max-width: 300px;
   margin-bottom: 1rem;
 }
 footer strong {
@@ -22495,7 +22496,7 @@ footer #footer-content {
 .colophon {
   background-color: var(--col-brown-400);
   color: var(--col-grey);
-  font-size: var(--fs-200);
+  font-size: var(--fs-100);
 }
 .colophon a {
   color: var(--col-grey);
@@ -22632,10 +22633,11 @@ footer #footer-content {
   color: white;
   position: relative;
   display: inline-block;
+  background-color: hsla(255deg, 100%, 100%, 0.4);
 }
 .hero a.button--arrow {
   padding: 0.5rem 2.5rem 0.5rem 1rem;
-  transition: background-color var(--transition);
+  transition: background-color var(--transition), color var(--transition);
 }
 .hero a.button--arrow::after {
   position: absolute;
@@ -22646,7 +22648,8 @@ footer #footer-content {
   transition: transform var(--transition);
 }
 .hero a.button--arrow:hover {
-  background-color: hsla(255deg, 100%, 100%, 0.4);
+  background-color: hsla(255deg, 100%, 100%, 0.8);
+  color: var(--col-highlight-400);
 }
 .hero a.button--arrow:hover::after {
   transform: translateX(0.5rem);
@@ -23141,6 +23144,11 @@ footer #footer-content {
 }
 .gallery-grid .grid-item:hover img {
   transform: scale(1.1);
+}
+
+.work_cta {
+  background: linear-gradient(45deg, var(--col-primary-400) 50%, var(--col-secondary-400) 100%);
+  padding-block: 2rem;
 }
 
 a,

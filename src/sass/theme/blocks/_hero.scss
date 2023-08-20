@@ -43,10 +43,12 @@
         color: white;
         position: relative;
         display: inline-block;
+        background-color: hsl(255 100% 100% / 0.4);
     }
     a.button--arrow {
         padding: 0.5rem 2.5rem 0.5rem 1rem;
-        transition: background-color var(--transition);
+        transition: background-color var(--transition),
+                    color var(--transition);
         &::after {
             position: absolute;
             content: "\f061";
@@ -56,7 +58,8 @@
             transition: transform var(--transition);
         }
         &:hover {
-            background-color: hsl(255 100% 100% / 0.4);
+            background-color: hsl(255 100% 100% / 0.8);
+            color: var(--col-highlight-400);
         }
         &:hover::after {
             transform: translateX(0.5rem);

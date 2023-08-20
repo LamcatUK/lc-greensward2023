@@ -21,7 +21,7 @@ defined('ABSPATH') || exit;
                 <p class="fs-200" style="max-width:44ch;text-wrap:balance">Experts in sports facility management across
                     the South West since 2012</p>
             </div>
-            <div class="col-md-6 col-lg-4 mb-3">
+            <div class="col-md-6 col-lg-3 mb-3">
                 <strong>Contact Us</strong>
                 <ul class="fa-ul">
                     <li><span class="fa-li"><i class="fa-solid fa-phone"></i></span>
@@ -44,8 +44,12 @@ defined('ABSPATH') || exit;
                     </li>
                 </ul>
             </div>
-            <div class="col-sm-6 col-lg-4 mb-2">
+            <div class="col-sm-6 col-lg-2 mb-2">
                 <strong>Useful Links</strong>
+                <?php wp_nav_menu(array('theme_location' => 'footer_menu2')); ?>
+            </div>
+            <div class="col-sm-6 col-lg-3 mb-2">
+                <strong>Services</strong>
                 <?php wp_nav_menu(array('theme_location' => 'footer_menu1')); ?>
             </div>
         </div>

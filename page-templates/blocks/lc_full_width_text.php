@@ -16,7 +16,7 @@ if (get_field('breakout')[0] ?? null && get_field('breakout')[0] == 'Yes') {
     $background = '';
 }
 
-$classes = $block['className'];
+$classes = $block['className'] ?? null;
 
 ?>
 <section

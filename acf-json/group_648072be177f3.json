@@ -105,6 +105,23 @@
                     },
                     "return_format": "array",
                     "parent_repeater": "field_6495d1e4cff70"
+                },
+                {
+                    "key": "field_64e20a085921e",
+                    "label": "CTA 2",
+                    "name": "cta_2",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array",
+                    "parent_repeater": "field_6495d1e4cff70"
                 }
             ]
         }
@@ -127,5 +144,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1687540264
+    "modified": 1692535313
 }

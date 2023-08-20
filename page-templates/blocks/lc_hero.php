@@ -54,6 +54,13 @@
                         class="button button--arrow"><?=$cta['title']?></a>
                     <?php
         }
+        if (get_sub_field('cta_2') ?? null) {
+            $cta = get_sub_field('cta_2');
+            ?>
+                    <a href="<?=$cta['url']?>"
+                        class="button button--arrow"><?=$cta['title']?></a>
+                    <?php
+        }
         ?>
                 </div>
             </div>

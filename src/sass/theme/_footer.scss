@@ -2,8 +2,10 @@ footer {
     background-color: var(--col-brown-400);
     color: var(--col-grey);
 
+    font-size: var(--fs-200);
+
     img {
-        max-width: 200px;
+        max-width: 300px;
         margin-bottom: 1rem;
     }
 
@@ -46,7 +48,7 @@ footer {
 .colophon {
     background-color: var(--col-brown-400);
     color: var(--col-grey);
-    font-size: var(--fs-200);
+    font-size: var(--fs-100);
     a {
         color: var(--col-grey);
         transition: var(--transition);
