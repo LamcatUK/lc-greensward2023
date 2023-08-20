@@ -1,3 +1,6 @@
+<?php
+$cols = get_field('cols') == 3 ? 'col-lg-4' : 'col-lg-6';
+?>
 <section class="team">
     <div class="container-xl py-5">
         <h2><?=get_field('title')?></h2>
@@ -6,7 +9,7 @@
 while(have_rows('team')) {
     the_row();
     ?>
-            <div class="col-lg-6">
+            <div class="<?=$cols?>">
                 <img class="team__img"
                     src="<?=wp_get_attachment_image_url(get_sub_field('image'), 'full')?>">
                 <div class="team__name">
@@ -33,7 +36,7 @@ while(have_rows('team')) {
             </div>
             <?php
 }
-        ?>
+?>
         </div>
     </div>
 </section>
