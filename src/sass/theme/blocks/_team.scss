@@ -1,0 +1,25 @@
+.team {
+    &__img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto 1rem auto;
+    }
+
+    &__name {
+        font-weight: 600;
+        font-size: 1.4rem;
+    }
+
+    &__role {
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-size: 0.889rem;
+    }
+
+    &__bio {
+
+    }
+}
