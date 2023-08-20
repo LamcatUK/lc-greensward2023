@@ -57,15 +57,6 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
         acf_register_block_type(array(
-            'name'				=> 'lc_faqs',
-            'title'				=> __('LC FAQs'),
-            'category'			=> 'layout',
-            'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/lc_faqs.php',
-            'mode'	=> 'edit',
-            'supports' => array('mode' => false),
-        ));
-        acf_register_block_type(array(
             'name'				=> 'lc_latest_insights',
             'title'				=> __('LC Latest Insights'),
             'category'			=> 'layout',
