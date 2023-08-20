@@ -108,7 +108,7 @@ function lc_dashboard_widget_display()
     <img style="width: 50%;"
         src="<?= get_stylesheet_directory_uri().'/img/lc-full.jpg'; ?>">
     <a class="button button-primary" target="_blank" rel="noopener nofollow noreferrer"
-        href="mailto:hello@lamcat.co.uk/">Contact</a>
+        href="mailto:hello@lamcat.co.uk">Contact</a>
 </div>
 <div>
     <p><strong>Thanks for choosing Lamcat!</strong></p>
@@ -374,7 +374,7 @@ add_filter('wp_nav_menu_items', 'add_admin_link', 10, 2);
 function add_admin_link($items, $args)
 {
     if ($args->theme_location == 'primary_nav') {
-        $items .= '<li class="menu-item nav-item"><a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '" class="nav-link">' . get_field('contact_phone', 'options') . '</a></li>';
+        $items .= '<li class="menu-item nav-item"><a href="tel:' . parse_phone(get_field('contact_phone', 'options')) . '" class="nav-link"><i class="fa-solid fa-phone"></i> ' . get_field('contact_phone', 'options') . '</a></li>';
         $items .= '<li><a class="btn btn-highlight" title="Book Survey" href="/book-survey/">Book a Site Survey</a></li>';
     }
     return $items;
