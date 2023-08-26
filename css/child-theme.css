@@ -23179,6 +23179,12 @@ footer #footer-content {
   transition: filter var(--transition);
   margin: 1rem;
 }
+.clients__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
 
 .team__img {
   aspect-ratio: 1/1;
