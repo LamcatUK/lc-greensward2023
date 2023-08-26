@@ -10,6 +10,7 @@
   --col-secondary-400: #72bf44;
   --col-brown-400: hsl( var(--hsl-brown-400) );
   --col-highlight-400: hsl( var(--hsl-highlight-400) );
+  --col-grey-200: hsl(0, 0%, 75%);
   --col-grey-400: hsl(0, 0%, 25%);
   --col-grey-800: rgb(51,51,51);
   --col-grey-900: hsl( var(--hsl-grey-900) );

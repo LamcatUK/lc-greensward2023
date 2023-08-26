@@ -1,0 +1,45 @@
+.clients {
+    a {
+        &::after {
+            content: "" !important;
+        }
+        &:hover {
+            img {
+                filter: grayscale(0);
+            }
+            .clients__name {
+                color: var(--col-grey-400);
+            }
+        }
+    }
+    &__client {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-inline: 1rem;
+    }
+    &__name {
+        font-size: var(--fs-100);
+        line-height: 1.1;
+        text-transform: uppercase;
+        // max-width: 20ch;
+        text-wrap: balance;
+        text-align: center;
+        height: 3em;
+        display: grid;
+        place-content: center;
+        color: var(--col-grey-200);
+        transition: color var(--transition);
+    }
+    img {
+        width: 100%;
+        aspect-ratio: 2 / 1;
+        max-width: 200px;
+        object-fit: contain;
+        object-position: center;
+        margin-bottom: 0.5rem;
+        filter: grayscale(1);
+        transition: filter var(--transition);
+        margin: 1rem;
+    }
+}

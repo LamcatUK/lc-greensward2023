@@ -10,6 +10,7 @@
   --col-secondary-400: #72bf44;
   --col-brown-400: hsl( var(--hsl-brown-400) );
   --col-highlight-400: hsl( var(--hsl-highlight-400) );
+  --col-grey-200: hsl(0, 0%, 75%);
   --col-grey-400: hsl(0, 0%, 25%);
   --col-grey-800: rgb(51,51,51);
   --col-grey-900: hsl( var(--hsl-grey-900) );
@@ -23138,6 +23139,47 @@ footer #footer-content {
 .faqs .accordion-collapse.collapsed.accordion-head::after {
   transform: rotate(-180deg);
 }
+.clients a::after {
+  content: "" !important;
+}
+.clients a:hover img {
+  filter: grayscale(0);
+}
+.clients a:hover .clients__name {
+  color: var(--col-grey-400);
+}
+.clients__client {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 1rem;
+}
+.clients__name {
+  font-size: var(--fs-100);
+  line-height: 1.1;
+  text-transform: uppercase;
+  text-wrap: balance;
+  text-align: center;
+  height: 3em;
+  display: grid;
+  place-content: center;
+  color: var(--col-grey-200);
+  transition: color var(--transition);
+}
+.clients img {
+  width: 100%;
+  aspect-ratio: 2/1;
+  max-width: 200px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: center;
+  object-position: center;
+  margin-bottom: 0.5rem;
+  filter: grayscale(1);
+  transition: filter var(--transition);
+  margin: 1rem;
+}
+
 .team__img {
   aspect-ratio: 1/1;
   -o-object-fit: cover;
