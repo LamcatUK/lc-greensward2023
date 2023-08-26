@@ -23185,6 +23185,10 @@ footer #footer-content {
   justify-content: space-around;
   gap: 0.5rem;
 }
+.clients__grid .clients__client img {
+  max-width: 130px;
+  margin: 0.25rem;
+}
 
 .team__img {
   aspect-ratio: 1/1;
