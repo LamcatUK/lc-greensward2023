@@ -1,6 +1,6 @@
 <section class="clients py-5">
     <div class="container-xl">
-        <h2>Some of our esteemed clients</h2>
+        <h2 class="h3">Some of our esteemed clients</h2>
         <div class="clients__slider">
             <?php
         while (have_rows('clients', 'options')) {
