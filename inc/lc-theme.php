@@ -15,7 +15,21 @@ remove_action('wp_enqueue_scripts', 'wp_enqueue_global_styles');
 remove_action('wp_body_open', 'wp_global_styles_render_svg_filters');
 
 
+// remove WP cruft
 define('DISALLOW_FILE_EDIT', true);
+
+add_action('admin_menu', 'remove_unnecessary_wordpress_menus', 999);
+
+function remove_unnecessary_wordpress_menus()
+{
+    global $submenu;
+    foreach($submenu['themes.php'] as $menu_index => $theme_menu) {
+        if($theme_menu[0] == 'Header' || $theme_menu[0] == 'Background') {
+            unset($submenu['themes.php'][$menu_index]);
+        }
+    }
+}
+//
 
 add_filter('big_image_size_threshold', '__return_false');
 
