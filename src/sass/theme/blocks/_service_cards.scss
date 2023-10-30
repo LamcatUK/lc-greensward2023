@@ -24,6 +24,19 @@
                 transform: scale(1.05);
             }
         }
+
+        &:last-of-type {
+            @media (min-width:768px) {
+                grid-column: 2 / 4;
+                aspect-ratio: 2 / 0.97;
+                .service_cards__detail img {
+                    max-width: 12.5%;
+                }
+            }
+            @media (min-width:992px) {
+                aspect-ratio: 4 / 0.98;
+            }
+        }
     }
     &__background {
         position: absolute;
