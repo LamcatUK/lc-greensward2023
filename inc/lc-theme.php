@@ -29,6 +29,14 @@ function remove_unnecessary_wordpress_menus()
         }
     }
 }
+
+add_action('admin_menu', 'remove_customizer');
+
+function remove_customizer()
+{
+    $customize_url = add_query_arg('return', urlencode(remove_query_arg(wp_removable_query_args(), wp_unslash($_SERVER['REQUEST_URI']))), 'customize.php');
+    remove_submenu_page('themes.php', $customize_url);
+}
 //
 
 add_filter('big_image_size_threshold', '__return_false');
