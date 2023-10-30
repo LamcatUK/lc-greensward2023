@@ -1,4 +1,7 @@
-<section class="wide_cta py-5">
+<?php
+$classes = $block['className'] ?? null;
+?>
+<section class="wide_cta py-5 <?=$classes?>">
     <div class="container-xl">
         <div class="wide_cta__card bg--grad">
             <div class="wide_cta__content">
