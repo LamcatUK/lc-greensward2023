@@ -23052,20 +23052,6 @@ footer #footer-content {
 .service_cards__card:hover .service_cards__background {
   transform: scale(1.05);
 }
-@media (min-width: 768px) {
-  .service_cards__card:last-of-type {
-    grid-column: 2/4;
-    aspect-ratio: 2/0.97;
-  }
-  .service_cards__card:last-of-type .service_cards__detail img {
-    max-width: 12.5%;
-  }
-}
-@media (min-width: 992px) {
-  .service_cards__card:last-of-type {
-    aspect-ratio: 4/0.98;
-  }
-}
 .service_cards__background {
   position: absolute;
   inset: 0;
