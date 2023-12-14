@@ -26,6 +26,9 @@ $classes = $block['className'] ?? null;
                         <?=get_field('contact_address', 'options')?>
                     </li>
                 </ul>
+                <div class="social-icons fs-600 ms-4 d-flex gap-3">
+                    <?=do_shortcode('[social_icons]')?>
+                </div>
             </div>
             <div class="col-lg-6">
                 <iframe

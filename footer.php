@@ -43,6 +43,9 @@ defined('ABSPATH') || exit;
                         <?=get_field('contact_address', 'options')?>
                     </li>
                 </ul>
+                <div class="social-icons ms-4">
+                    <?=do_shortcode('[social_icons]')?>
+                </div>
             </div>
             <div class="col-sm-6 col-lg-2 mb-2">
                 <strong>Useful Links</strong>
